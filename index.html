@@ -1689,9 +1689,11 @@
                       data-id="a0b25e1" data-element_type="widget" data-settings='{"_animation":"zoomIn"}'
                       data-widget_type="image.default">
                       <div class="elementor-widget-container">
-                        <video fetchpriority="high" decoding="async" width="364" height="500" src="12.mp4" autoplay="autoplay loop" 
+                        <video fetchpriority="high" decoding="async" width="364" height="500" src="12.mp4" autoplay="true" loop="true"
+                        id="myVideo" autoplay muted loop>
+                         <source src="movie.mp4" type="video/mp4"
                           class="attachment-large size-large wp-image-39" 
-                          sizes="(max-width: 364px) 100vw, 364px" >
+                          sizes="(max-width: 364px) 100vw, 364px" ></video>
                       </div>
                     </div>
                   </div>
@@ -2623,6 +2625,10 @@
               data-widget_type="social-icons.default">
               <div class="elementor-widget-container">
                 <style>
+                  #myVideo::-webkit-media-controls {
+                    display: none !important;
+                  }
+                
                   /*! elementor - v3.21.0 - 08-05-2024 */
                   .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,
                   .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,
